@@ -24,17 +24,17 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {router.pathname === '/' ? (
-          <title>Protocol API Reference</title>
+          <title>xxxxx API Reference</title>
         ) : (
-          <title>{`${pageProps.title} - Protocol API Reference`}</title>
+          <title>{`${pageProps.title} - xxxxx API Reference`}</title>
         )}
         <meta name="description" content={pageProps.description} />
       </Head>
-      <MDXProvider components={mdxComponents}>
-        <Layout {...pageProps}>
-          <Component {...pageProps} />
-        </Layout>
-      </MDXProvider>
+      {/* <MDXProvider components={mdxComponents}> */}
+      <Layout {...pageProps}>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </MDXProvider> */}
     </>
   )
 }

@@ -185,25 +185,122 @@ function NavigationGroup({ group, className }) {
 
 export const navigation = [
   {
-    title: 'Guides',
+    title: 'Javascript',
     links: [
-      { title: 'Introduction', href: '/' },
-      { title: 'Quickstart', href: '/quickstart' },
-      { title: 'SDKs', href: '/sdks' },
-      { title: 'Authentication', href: '/authentication' },
-      { title: 'Pagination', href: '/pagination' },
-      { title: 'Errors', href: '/errors' },
-      { title: 'Webhooks', href: '/webhooks' },
+      { title: '词法环境', href: '/' },
+      { title: '问题摘要', href: '/quickstart' },
+      { title: 'Chrome V8引擎', href: '/sdks' },
+      { title: 'Chrome extensions', href: '/authentication' },
+      { title: '语法树类型标识', href: '/pagination' },
+      { title: '浏览器运行机制', href: '/errors' },
     ],
   },
   {
-    title: 'Resources',
+    title: 'Babel',
     links: [
-      { title: 'Contacts', href: '/contacts' },
-      { title: 'Conversations', href: '/conversations' },
-      { title: 'Messages', href: '/messages' },
-      { title: 'Groups', href: '/groups' },
-      { title: 'Attachments', href: '/attachments' },
+      { title: 'Babel乱笔', href: '/contacts' },
+      { title: 'Babel疑问', href: '/conversations' },
+      { title: 'babel-core', href: '/messages' },
+      { title: '初探AST', href: '/groups' },
+      { title: 'babelrc杂谈', href: '/attachments' },
+      { title: 'Babel预设Presets', href: '/attachments' },
+    ],
+  },
+  {
+    title: 'Wepback',
+    links: [
+      { title: '整体配置结构', href: '/contacts' },
+      { title: '简易版打包实现库', href: '/conversations' },
+      { title: '打包后代码片段', href: '/messages' },
+      { title: 'webpack问题点', href: '/groups' },
+      { title: '配置文档', href: '/webpack-config' },
+    ],
+  },
+  {
+    title: 'Next.js',
+    links: [
+      { title: 'Next架构图', href: '/contacts' },
+      { title: 'Next.js VS Remix', href: '/conversations' },
+      { title: 'CSR、SSR、SR、HR', href: '/messages' },
+      { title: 'Next.config.js', href: '/groups' },
+      { title: 'Next.js 技术文档', href: '/attachments' },
+      { title: 'Next.js 源码浅析', href: '/attachments' },
+    ],
+  },
+  {
+    title: 'React',
+    links: [
+      { title: 'React架构图', href: '/contacts' },
+      { title: '精通React提纲', href: '/conversations' },
+      { title: 'React 名词解释', href: '/messages' },
+      { title: '调试React代码', href: '/groups' },
+      { title: 'React 18新特性', href: '/attachments' },
+    ],
+  },
+  {
+    title: '前端算法实战',
+    links: [
+      { title: '前端算法实战', href: '/contacts' },
+      { title: '网站大全', href: '/contacts' },
+    ],
+  },
+  {
+    title: 'Shell',
+    links: [
+      { title: '常见Shell命令', href: '/contacts' },
+      { title: 'Shell特性Login', href: '/conversations' },
+      { title: 'Shader', href: '/messages' },
+    ],
+  },
+  {
+    title: 'Typescript',
+    links: [
+      { title: 'TS学习大纲', href: '/contacts' },
+      { title: 'TS-JSX', href: '/conversations' },
+      { title: 'tsconfig.json', href: '/messages' },
+      { title: 'TS代码片段', href: '/messages' },
+      { title: 'TS 高级类型使用', href: '/messages' },
+      { title: 'declare使用姿势', href: '/messages' },
+      { title: 'TS 记录摘要', href: '/messages' },
+    ],
+  },
+  {
+    title: 'Vue',
+    links: [
+      { title: '混入和插件机制', href: '/contacts' },
+      { title: '依赖收集', href: '/conversations' },
+      { title: '响应原理如何实现', href: '/messages' },
+      { title: '生命周期', href: '/messages' },
+      { title: '生命周期', href: '/messages' },
+    ],
+  },
+  {
+    title: '前端工程化',
+    links: [
+      { title: '统一标准：流程、规范统一', href: '/contacts' },
+      { title: '微前端', href: '/conversations' },
+    ],
+  },
+  {
+    title: '网络知识',
+    links: [
+      { title: 'JWT', href: '/contacts' },
+      { title: '网络七层&协议', href: '/conversations' },
+      { title: '协商&强缓存', href: '/messages' },
+      { title: 'HTTPS 详解', href: '/messages' },
+    ],
+  },
+  {
+    title: '性能优化',
+    links: [
+      { title: 'PerformanceObserver code', href: '/contacts' },
+      { title: '性能杂谈', href: '/conversations' },
+      { title: '2020 - web-vitals', href: '/conversations' },
+      { title: '2018 - Lighthouse', href: '/messages' },
+      { title: '2017 - Audit', href: '/messages' },
+      { title: '2015 - PWA & AMP', href: '/messages' },
+      { title: 'RAIL 量化使用者体验', href: '/messages' },
+      { title: 'Chrome 性能工具 - Audit', href: '/messages' },
     ],
   },
 ]
