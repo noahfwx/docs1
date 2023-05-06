@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { Router, useRouter } from 'next/router'
 import { MDXProvider } from '@mdx-js/react'
@@ -24,17 +25,17 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {router.pathname === '/' ? (
-          <title>xxxxx API Reference</title>
+          <title>Note API Reference</title>
         ) : (
-          <title>{`${pageProps.title} - xxxxx API Reference`}</title>
+          <title>{`${pageProps.title} - Note API Reference`}</title>
         )}
         <meta name="description" content={pageProps.description} />
       </Head>
-      {/* <MDXProvider components={mdxComponents}> */}
-      <Layout {...pageProps}>
-        <Component {...pageProps} />
-      </Layout>
-      {/* </MDXProvider> */}
+      <MDXProvider components={mdxComponents}>
+        <Layout {...pageProps}>
+          <Component {...pageProps} />
+        </Layout>
+      </MDXProvider>
     </>
   )
 }

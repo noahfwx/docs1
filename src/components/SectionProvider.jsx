@@ -52,6 +52,9 @@ function useVisibleSections(sectionStore) {
         sectionIndex++
       ) {
         let { id, headingRef, offsetRem } = sections[sectionIndex]
+        console.log('headingRef', headingRef)
+        if (!headingRef) return
+        console.log('sections[sectionIndex]', sections[sectionIndex])
         let offset = remToPx(offsetRem)
         let top = headingRef.current.getBoundingClientRect().top + scrollY
 
